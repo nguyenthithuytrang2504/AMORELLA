@@ -1,0 +1,70 @@
+/* ===================================
+   CUSTOM CSS - Banner Optimization
+   CSS tùy chỉnh cho banner - Xóa khoảng trống xám
+   Áp dụng cho: index.html (slider-one) và homepage-2.html (slider-two)
+   =================================== */
+
+/* Điều chỉnh banner để phủ kín, không có khoảng trống xám */
+.pbmit-slider-one .pbmit-slider-bg,
+.pbmit-slider-two .pbmit-slider-bg {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Chiều cao banner cho desktop */
+.pbmit-slider-one .pbmit-slider-item,
+.pbmit-slider-two .pbmit-slider-item {
+    height: 315px !important;
+    min-height: 315px;
+}
+
+/* ===================================
+   RESPONSIVE - Tablet & Mobile
+   =================================== */
+
+/* Responsive tablet (màn hình <= 991px) */
+@media (max-width: 991px) {
+    .pbmit-slider-one .pbmit-slider-item,
+    .pbmit-slider-two .pbmit-slider-item {
+        height: 450px !important;
+        min-height: 350px;
+    }
+}
+
+/* Responsive mobile (màn hình <= 767px) */
+@media (max-width: 767px) {
+    .pbmit-slider-one .pbmit-slider-item,
+    .pbmit-slider-two .pbmit-slider-item {
+        height: 400px !important;
+        min-height: 300px;
+    }
+    
+    /* Bỏ bo góc trên mobile */
+    .pbmit-slider-one .pbmit-slider-bg,
+    .pbmit-slider-two .pbmit-slider-bg {
+        border-radius: 0;
+    }
+}
+
+/* FIX: Đảm bảo menu luôn ở trên banner - không bị che */
+.site-header {
+    position: relative !important;
+    z-index: 9999 !important;
+}
+
+.site-header-menu {
+    position: relative !important;
+    z-index: 9999 !important;
+}
+
+.pbmit-slider-area {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.pbmit-slider-content {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
