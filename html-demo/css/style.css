@@ -82,12 +82,6 @@
 .fadeInLeft {
     animation-name: fadeInLeft;
 }
-.pbmit-slider-bg {
-    width: 100%;
-    height: 80%;
-    background-size: cover;
-    background-position: center;
-}
 @keyframes fadeInLeft{
 	0% {
 		opacity: 0;

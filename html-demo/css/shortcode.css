@@ -3416,13 +3416,13 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100%;
-	border-radius: 30px;
+	width: 200%;
+	border-radius: 10px;
 	transform: scale(1.05) rotate(.5deg);
 	transform-origin: 90% 50%;
-	border-radius: 30px;
 	transition: transform 1.2s cubic-bezier(.4, .01, .14, .99);
 }
+
 .pbmit-static-box-style-1:hover .pbmit-bg-imgbox {
 	transform: scale(1.001) rotate(0);
 }
